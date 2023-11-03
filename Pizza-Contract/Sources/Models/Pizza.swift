@@ -3,7 +3,7 @@ import Foundation
 /// A model representing a pizza.
 ///
 /// Pizzas are delicious, even those with ananas on top.
-public class Pizza {
+public class Pizza: CustomStringConvertible {
     
     /// The pizza name.
     public let name : String
@@ -23,5 +23,9 @@ public class Pizza {
         self.name = name
         self.family = family
         self.ingredients = ingredients
+    }
+    
+    public var description: String {
+        return "Pizza(name=\"\(name)\", ingredients=\(ingredients))"
     }
 }

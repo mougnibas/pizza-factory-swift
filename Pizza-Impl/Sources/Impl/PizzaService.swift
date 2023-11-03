@@ -8,7 +8,7 @@ public struct PizzaService : IPizzaService {
     private let pizzas : [Pizza]
     
     /// Initialize the service.
-    init() {
+    public init() {
         
         // Hard-coded "rouges" pizzas
         let rouges = [

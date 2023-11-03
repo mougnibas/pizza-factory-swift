@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Pizza-CLI">
+   </FileRef>
+   <FileRef
       location = "group:Pizza-Impl">
    </FileRef>
    <FileRef
