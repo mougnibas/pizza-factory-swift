@@ -23,16 +23,16 @@ class UnitTestPizzaService: XCTestCase {
     }
     
     /// Test that the service instance return only two pizzas.
-    func testServiceReturnTwoEntries() {
+    func testServiceReturnEightEntries() {
         
         // Arrange
-        let expected = 2
+        let expected = 8
         
         // Act
         let actual = service.getAllPizza().count
         
         // Assert
-        XCTAssertTrue(actual == expected)
+        XCTAssertEqual(expected, actual)
     }
     
 }

@@ -13,7 +13,8 @@ final class UnitTestsPizza: XCTestCase {
         
         // Arrange
         let expected = "Awesome";
-        let pizza = Pizza(name: "Awesome", family: Family.BLANCHE)
+        let ingredients = ["onion", "garlic"]
+        let pizza = Pizza(name: "Awesome", family: Family.BLANCHE, ingredients: ingredients)
         
         // Act
         let actual = pizza.name;
@@ -27,7 +28,8 @@ final class UnitTestsPizza: XCTestCase {
         
         // Arrange
         let notExpected = "Awesome";
-        let pizza = Pizza(name: "I'm not awesome", family: Family.BLANCHE)
+        let ingredients = ["onion", "garlic"]
+        let pizza = Pizza(name: "I'm not awesome", family: Family.BLANCHE, ingredients: ingredients)
         
         // Act
         let actual = pizza.name;
@@ -41,7 +43,8 @@ final class UnitTestsPizza: XCTestCase {
         
         // Arrange
         let expected = Family.BLANCHE
-        let pizza = Pizza(name: "Awesome", family: Family.BLANCHE)
+        let ingredients = ["onion", "garlic"]
+        let pizza = Pizza(name: "Awesome", family: Family.BLANCHE, ingredients: ingredients)
         
         // Act
         let actual = pizza.family;
@@ -55,7 +58,8 @@ final class UnitTestsPizza: XCTestCase {
         
         // Arrange
         let notExpected = Family.BLANCHE
-        let pizza = Pizza(name: "Awesome", family: Family.ROUGE)
+        let ingredients = ["onion", "garlic"]
+        let pizza = Pizza(name: "Awesome", family: Family.ROUGE, ingredients: ingredients)
         
         // Act
         let actual = pizza.family;
